@@ -1,6 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import productRouter from './routes/productRoute.js';
+
 
 // Server
 const app = express();
@@ -16,14 +18,11 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 
 // End Points
-app.get('/', (req, res) => {
-  res.json('Recieved a GET request with success!');
+app.use('/api/user', (req, res) => {
+  res.json('Recieved a GET request with success to /api/user route!');
 });
 
-app.post('/products', (req, res) => {
-  console.log(req.body);
-  res.json('Recieved a POST request with success!');
-});
+app.use('/api/product', productRouter);
 
 app.listen(PORT, () => {
   console.log(`Ember REST API listening on port ${PORT}`)
