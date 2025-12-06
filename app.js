@@ -18,6 +18,7 @@ dotenv.config();
 // Port
 const PORT = process.env.PORT || 3000;
 
+// Routs
 app.use('/api/user', authRouter);
 app.use('/api/product', productRouter);
 

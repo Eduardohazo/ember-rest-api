@@ -74,6 +74,7 @@ export const getUser = asyncHandler(async (req, res) => {
   res.json({ name: "Jon Doe" });
 });
 
+// READ
 export const getAllUsers = asyncHandler(async (req, res) => {
   res.json([
     { name: "Jon Doe" },
@@ -119,7 +120,7 @@ export const forgotPasswordUser = asyncHandler((req, res) => {
   });
 });
 
-
+// POST
 // Step 2: Reset password
 export const resetPasswordUser = asyncHandler(async (req, res) => {
   const { token } = req.params;

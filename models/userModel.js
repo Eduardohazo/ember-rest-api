@@ -8,7 +8,7 @@ export class User {
     this.lastname = lastname;
     this.email = email;
     this.mobile = mobile;
-    this.password = password; // Will be hashed
+    this.password = password; 
     this.role = role;
     this.isBlocked = false;
   }
