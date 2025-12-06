@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import productRouter from './routes/productRoute.js';
+import authRouter from './routes/authRoute.js';
 
 
 // Server
@@ -17,11 +18,7 @@ dotenv.config();
 // Port
 const PORT = process.env.PORT || 3000;
 
-// End Points
-app.use('/api/user', (req, res) => {
-  res.json('Recieved a GET request with success to /api/user route!');
-});
-
+app.use('/api/user', authRouter);
 app.use('/api/product', productRouter);
 
 app.listen(PORT, () => {
