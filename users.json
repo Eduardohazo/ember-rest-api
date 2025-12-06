@@ -1,12 +1,1 @@
-[
-  {
-    "id": 1764988181550,
-    "firstname": "Jon",
-    "lastname": "Doe",
-    "email": "eduardo.gonzalez.dev@gmail.com",
-    "mobile": "1234567890",
-    "password": "$2b$10$iDSpICmKmZTX6QpTB5kbd.TMzZgOM1jaHGB0UGgOhY6S4LubGYeRO",
-    "role": "user",
-    "isBlocked": false
-  }
-]
+[]

@@ -88,13 +88,28 @@ export const updateUser = asyncHandler(async (req, res) => {
   res.json(`Updated user name:${req.body.name}`);
 });
 
-// DELETE
-export const deleteUser = asyncHandler(async (req, res) => {
-  res.json(`Deleted user name:${req.body.name}`);
+// DELETE 
+export const deleteUser = asyncHandler( async (req, res) => {
+  const { email } = req.params; // or use email
+  let users = readUsers();
+
+  // Check if user exists
+  const userExists = users.find(u => u.email == email);
+  if (!userExists) {
+    return res.status(404).json({ message: "User not found" });
+  }
+
+  // Remove user from array
+  users = users.filter(u => u.email != email);
+
+  // Save updated array
+  writeUsers(users);
+
+  res.json({ message: `User with email ${email} has been deleted.` });
 });
 
 // POST
-// Step 1: Generate reset token (forgot password)
+// Step 1 (recover password process): Generate reset token (forgot password)
 export const forgotPasswordUser = asyncHandler((req, res) => {
   const { email } = req.body;
   const users = readUsers();
@@ -121,7 +136,7 @@ export const forgotPasswordUser = asyncHandler((req, res) => {
 });
 
 // POST
-// Step 2: Reset password
+// Step 2 (recover password process): Reset password
 export const resetPasswordUser = asyncHandler(async (req, res) => {
   const { token } = req.params;
   const { newPassword } = req.body;
