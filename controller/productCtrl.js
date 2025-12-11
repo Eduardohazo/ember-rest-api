@@ -1,14 +1,24 @@
 import asyncHandler from "express-async-handler";
-import { getAllProducts } from "../models/product.model.js";
+import { getAllProducts, createProduct } from "../models/product.model.js";
+import { sanitizeObject } from "../utils/sanitizer.js";
+
 
 
 // CREATE
-export const createProduct = asyncHandler(async (req, res) => {
-  console.log(req.body);
-  res.json(
-    "Recived a GET request with success to /api/product/create-product route!"
-  );
-});
+export const createProductController = async (req, res) => {
+  // 1. Sanitization
+  const data = sanitizeObject(req.body);
+
+  // Behaviour business rule:
+  if (data.price < 0) {
+    return res.status(400).json({ error: "Price cannot be negative." });
+  }
+
+  // 2. Call model to validate 
+  const product = createProduct(data);
+
+  res.json({ message: "Product created", product });
+};
 
 // READ
 export const getProduct = asyncHandler(async (req, res) => {

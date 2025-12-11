@@ -42,7 +42,7 @@
     "id_color": 2,
     "stock": 22,
     "size": 18,
-    "price": 64.50,
+    "price": 64.5,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -54,7 +54,7 @@
     "id_color": 2,
     "stock": 22,
     "size": 18,
-    "price": 64.50,
+    "price": 64.5,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -66,7 +66,7 @@
     "id_color": 2,
     "stock": 22,
     "size": 18,
-    "price": 64.50,
+    "price": 64.5,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -78,7 +78,7 @@
     "id_color": 3,
     "stock": 16,
     "size": 19,
-    "price": 69.00,
+    "price": 69,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -90,7 +90,7 @@
     "id_color": 3,
     "stock": 16,
     "size": 19,
-    "price": 69.00,
+    "price": 69,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -102,12 +102,11 @@
     "id_color": 3,
     "stock": 16,
     "size": 19,
-    "price": 69.00,
+    "price": 69,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
   },
-
   {
     "id_product": 17650439270010,
     "title": "Flip flops Mini Wave",
@@ -115,7 +114,7 @@
     "id_color": 4,
     "stock": 30,
     "size": 20,
-    "price": 72.00,
+    "price": 72,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -127,7 +126,7 @@
     "id_color": 4,
     "stock": 30,
     "size": 20,
-    "price": 72.00,
+    "price": 72,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -139,12 +138,11 @@
     "id_color": 4,
     "stock": 30,
     "size": 20,
-    "price": 72.00,
+    "price": 72,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
   },
-
   {
     "id_product": 17650439270013,
     "title": "Flip flops Mini Wave",
@@ -181,7 +179,6 @@
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
   },
-
   {
     "id_product": 17650439270016,
     "title": "Flip flops Mini Wave",
@@ -189,7 +186,7 @@
     "id_color": 1,
     "stock": 19,
     "size": 22,
-    "price": 79.50,
+    "price": 79.5,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -201,7 +198,7 @@
     "id_color": 1,
     "stock": 19,
     "size": 22,
-    "price": 79.50,
+    "price": 79.5,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
@@ -213,12 +210,11 @@
     "id_color": 1,
     "stock": 19,
     "size": 22,
-    "price": 79.50,
+    "price": 79.5,
     "description": "Chancla infantil ligera con plantilla acolchada y diseño antideslizante para juegos y patio.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "kids"
   },
-
   {
     "id_product": 17650439270019,
     "title": "Flip flops Mini Wave",
@@ -226,7 +222,7 @@
     "id_color": 1,
     "stock": 24,
     "size": 23,
-    "price": 94.00,
+    "price": 94,
     "description": "Sandalia ligera para mujer con tiras suaves y plantilla texturizada que brinda estabilidad al caminar.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
@@ -238,7 +234,7 @@
     "id_color": 1,
     "stock": 24,
     "size": 23,
-    "price": 94.00,
+    "price": 94,
     "description": "Modelo femenino con diseño estilizado y suela de agarre ideal para uso diario.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
@@ -250,12 +246,11 @@
     "id_color": 1,
     "stock": 24,
     "size": 23,
-    "price": 94.00,
+    "price": 94,
     "description": "Chancla cómoda para mujer, plantilla acolchada y tiras flexibles que evitan rozaduras.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
   },
-
   {
     "id_product": 17650439270022,
     "title": "Flip flops Mini Wave",
@@ -263,7 +258,7 @@
     "id_color": 2,
     "stock": 17,
     "size": 24,
-    "price": 99.00,
+    "price": 99,
     "description": "Sandalia femenina con suela ligera y detalle en relieve para un estilo veraniego.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
@@ -275,7 +270,7 @@
     "id_color": 2,
     "stock": 17,
     "size": 24,
-    "price": 99.00,
+    "price": 99,
     "description": "Modelo con soporte plantar suave y tiras resistentes para mayor durabilidad.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
@@ -287,12 +282,11 @@
     "id_color": 2,
     "stock": 17,
     "size": 24,
-    "price": 99.00,
+    "price": 99,
     "description": "Chancla con estilo femenino y plantilla acolchada que reduce el impacto al caminar.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
   },
-
   {
     "id_product": 17650439270025,
     "title": "Flip flops Mini Wave",
@@ -300,7 +294,7 @@
     "id_color": 3,
     "stock": 12,
     "size": 25,
-    "price": 109.00,
+    "price": 109,
     "description": "Sandalia premium con plantilla ergonómica y diseño elegante para uso prolongado.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
@@ -312,7 +306,7 @@
     "id_color": 3,
     "stock": 12,
     "size": 25,
-    "price": 109.00,
+    "price": 109,
     "description": "Modelo femenino con tiras acolchadas y suela resistente al desgaste.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
@@ -324,12 +318,11 @@
     "id_color": 3,
     "stock": 12,
     "size": 25,
-    "price": 109.00,
+    "price": 109,
     "description": "Chancla de confort avanzado, ideal para caminar largas distancias en clima cálido.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
   },
-
   {
     "id_product": 17650439270028,
     "title": "Flip flops Mini Wave",
@@ -366,7 +359,6 @@
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "women"
   },
-
   {
     "id_product": 17650439270031,
     "title": "Flip flops Mini Wave",
@@ -374,7 +366,7 @@
     "id_color": 1,
     "stock": 26,
     "size": 27,
-    "price": 139.00,
+    "price": 139,
     "description": "Chancla masculina resistente con plantilla de alta densidad y suela antideslizante.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
@@ -386,7 +378,7 @@
     "id_color": 1,
     "stock": 26,
     "size": 27,
-    "price": 139.00,
+    "price": 139,
     "description": "Sandalia para hombre con tiras reforzadas y agarre mejorado para uso rudo.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
@@ -398,12 +390,11 @@
     "id_color": 1,
     "stock": 26,
     "size": 27,
-    "price": 139.00,
+    "price": 139,
     "description": "Modelo masculino diseñado para máxima durabilidad y comodidad.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
   },
-
   {
     "id_product": 17650439270034,
     "title": "Flip flops Mini Wave",
@@ -411,7 +402,7 @@
     "id_color": 2,
     "stock": 18,
     "size": 28,
-    "price": 149.50,
+    "price": 149.5,
     "description": "Sandalia outdoor con suela de alto agarre y material resistente al agua.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
@@ -423,7 +414,7 @@
     "id_color": 2,
     "stock": 18,
     "size": 28,
-    "price": 149.50,
+    "price": 149.5,
     "description": "Chancla masculina con diseño robusto y soporte lateral reforzado.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
@@ -435,12 +426,11 @@
     "id_color": 2,
     "stock": 18,
     "size": 28,
-    "price": 149.50,
+    "price": 149.5,
     "description": "Flip flop premium con absorción de impacto y suela resistente.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
   },
-
   {
     "id_product": 17650439270037,
     "title": "Flip flops Mini Wave",
@@ -448,7 +438,7 @@
     "id_color": 3,
     "stock": 15,
     "size": 29,
-    "price": 169.00,
+    "price": 169,
     "description": "Chancla de gama alta con materiales premium y soporte plantar avanzado.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
@@ -460,7 +450,7 @@
     "id_color": 3,
     "stock": 15,
     "size": 29,
-    "price": 169.00,
+    "price": 169,
     "description": "Sandalia resistente ideal para actividades al aire libre y uso prolongado.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
@@ -472,7 +462,7 @@
     "id_color": 3,
     "stock": 15,
     "size": 29,
-    "price": 169.00,
+    "price": 169,
     "description": "Modelo masculino con alta durabilidad y excelente amortiguación.",
     "image": "./assets/public/images/products/flipflops-style3.png",
     "category": "men"
