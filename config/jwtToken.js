@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const SECRET = process.env.SECRET; // Use env variable in production
+const JWT_SECRET = process.env.JWT_SECRET; // Use env variable in production
 
 export const generateToken = (id) => {
-  return jwt.sign({ id }, SECRET, { expiresIn: "1h" });
+  return jwt.sign({ id }, JWT_SECRET, { expiresIn: "1h" });
 };

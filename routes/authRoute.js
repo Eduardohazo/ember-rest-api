@@ -18,7 +18,7 @@ router.post("/register", createUser);
 router.post("/login", loginUser);
 router.post("/forgot-password", forgotPasswordUser);
 router.post("/reset-password/:token", resetPasswordUser);
-router.get("/get-user/:id", authMiddleware, isAdmin, getUser);
+router.get("/get-user", authMiddleware, getUser);
 router.get('/get-all-users', getAllUsers);
 router.put('/update-user/:id', updateUser);
 router.delete('/delete-user/:email', deleteUser);

@@ -35,79 +35,6 @@ export const createUser = asyncHandler(async (req, res) => {
   res.status(201).json({ user: newUser, token });
 });
 
-// READ
-export const loginUser = asyncHandler(async (req, res) => {
-  const { email, password } = req.body;
-  console.log(email);
-
-  // 1 Read users from JSON
-  const users = readUsers();
-
-  // 2️ Find user by email
-  const user = users.find((u) => u.email === email);
-  if (!user)
-    return res.status(400).json({ message: "Invalid email or password" });
-
-  // 3️ Compare passwords
-  const isMatch = await bcrypt.compare(password, user.password);
-  if (!isMatch)
-    return res.status(400).json({ message: "Invalid email or password" });
-
-  // 4 Generate JWT token
-  const token = generateToken(user.id);
-
-  // 5️ Return user info + token (avoid sending password)
-  res.json({
-    user: {
-      id: user.id,
-      firstname: user.firstname,
-      lastname: user.lastname,
-      email: user.email,
-      mobile: user.mobile,
-    },
-    token,
-  });
-});
-
-// READ
-export const getUser = asyncHandler(async (req, res) => {
-  res.json({ name: "Jon Doe" });
-});
-
-// READ
-export const getAllUsers = asyncHandler(async (req, res) => {
-  res.json([
-    { name: "Jon Doe" },
-    { name: "James Jean" },
-    { name: "Rick Bell" },
-  ]);
-});
-
-// UPDATE
-export const updateUser = asyncHandler(async (req, res) => {
-  res.json(`Updated user name:${req.body.name}`);
-});
-
-// DELETE 
-export const deleteUser = asyncHandler( async (req, res) => {
-  const { email } = req.params; // or use email
-  let users = readUsers();
-
-  // Check if user exists
-  const userExists = users.find(u => u.email == email);
-  if (!userExists) {
-    return res.status(404).json({ message: "User not found" });
-  }
-
-  // Remove user from array
-  users = users.filter(u => u.email != email);
-
-  // Save updated array
-  writeUsers(users);
-
-  res.json({ message: `User with email ${email} has been deleted.` });
-});
-
 // POST
 // Step 1 (recover password process): Generate reset token (forgot password)
 export const forgotPasswordUser = asyncHandler((req, res) => {
@@ -160,4 +87,83 @@ export const resetPasswordUser = asyncHandler(async (req, res) => {
   writeUsers(users);
 
   res.json({ message: "Password successfully reset!" });
+});
+
+// READ
+export const loginUser = asyncHandler(async (req, res) => {
+  const { email, password } = req.body;
+  console.log(email);
+
+  // 1 Read users from JSON
+  const users = readUsers();
+
+  // 2️ Find user by email
+  const user = users.find((u) => u.email === email);
+  if (!user)
+    return res.status(400).json({ message: "Invalid email or password" });
+
+  // 3️ Compare passwords
+  const isMatch = await bcrypt.compare(password, user.password);
+  if (!isMatch)
+    return res.status(400).json({ message: "Invalid email or password" });
+
+  // 4 Generate JWT token
+  const token = generateToken(user.id);
+
+  // 5️ Return user info + token (avoid sending password)
+  res.json({
+    user: {
+      id: user.id,
+      firstname: user.firstname,
+      lastname: user.lastname,
+      email: user.email,
+      mobile: user.mobile,
+    },
+    token,
+  });
+});
+
+// READ
+export const getUser = asyncHandler(async (req, res) => {
+  res.json({
+    id: req.user.id,
+    firstname: req.user.firstname,
+    lastname: req.user.lastname,
+    email: req.user.email,
+    mobile: req.user.mobile,
+  });
+});
+
+// READ
+export const getAllUsers = asyncHandler(async (req, res) => {
+  res.json([
+    { name: "Jon Doe" },
+    { name: "James Jean" },
+    { name: "Rick Bell" },
+  ]);
+});
+
+// UPDATE
+export const updateUser = asyncHandler(async (req, res) => {
+  res.json(`Updated user name:${req.body.name}`);
+});
+
+// DELETE 
+export const deleteUser = asyncHandler( async (req, res) => {
+  const { email } = req.params; // or use email
+  let users = readUsers();
+
+  // Check if user exists
+  const userExists = users.find(u => u.email == email);
+  if (!userExists) {
+    return res.status(404).json({ message: "User not found" });
+  }
+
+  // Remove user from array
+  users = users.filter(u => u.email != email);
+
+  // Save updated array
+  writeUsers(users);
+
+  res.json({ message: `User with email ${email} has been deleted.` });
 });

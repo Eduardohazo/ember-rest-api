@@ -1,21 +1,31 @@
 import asyncHandler from "express-async-handler";
+import { getAllProducts } from "../models/product.model.js";
+
 
 // CREATE
 export const createProduct = asyncHandler(async (req, res) => {
   console.log(req.body);
   res.json(
-    "Recieved a GET request with success to /api/product/create-product route!"
+    "Recived a GET request with success to /api/product/create-product route!"
   );
 });
 
 // READ
 export const getProduct = asyncHandler(async (req, res) => {
-  res.json({name: "Flip Flops 1"});
+  res.json({ name: "Flip Flops 1" });
 });
 
-export const getAllProducts = asyncHandler(async (req, res) => {
-  res.json([{name: "Flip Flops 1"}, {name: "Flip Flops 2"}, {name: "Flip Flops 3"}]);
-});
+
+// READ
+export function getAllProductsController(req, res) {
+  try {
+    const products = getAllProducts();
+    res.json(products);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+}
+
 
 // UPDATE
 export const updateProduct = asyncHandler(async (req, res) => {
