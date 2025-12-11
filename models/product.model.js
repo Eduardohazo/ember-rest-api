@@ -4,12 +4,14 @@ import { readProducts, writeProducts } from "../utils/json.js";
 
 
 export function createProduct(rawData) {
+  // TODO
   // 1. Validation + Structure buisness logic
   const data = ProductSchema.parse(rawData); 
 
   // 2. Persistance
   const products = readProducts();
   products.push(data);
+  // 2.1 Save product
   writeProducts(products);
 
   return data;
